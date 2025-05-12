@@ -1,3 +1,20 @@
+
+## Yahooquery Fork
+
+This version of yahooquery is built on top of <a target="_blank" href="https://github.com/dpguthrie/yahooquery">https://github.com/dpguthrie/yahooquery</a>.
+
+### Fixes:
+
+- Change of "S" into "s" in line 1470 of yahooquery/utils/init.py
+- Add session:
+```
+from yahooquery import Ticker
+from curl_cffi import Session
+ticker1 = Ticker('SPY', sesssion=Session(impersonate="chrome"))
+```
+From: <a target="_blank" href="https://github.com/dpguthrie/yahooquery/issues/315">GitHub Yahooquery Issues</a>.
+
+
 <p align="center">
     <a href="#"><img src="docs/docs/img/full.png"></a>
 </p>
